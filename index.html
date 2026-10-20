@@ -73,23 +73,23 @@ html.reveal-enabled .reveal{transition:opacity .14s linear,transform .14s ease-o
 </style>
   <!-- INDEX ÚNICO: este archivo incluye estilos, animaciones, fuentes, fórmulas
        pero no contiene ningún escudo incorporado. No necesita styles.css ni app.js
-       para abrir y presentar el sitio. Los logos y las ilustraciones se cargan de assets/.
+       para abrir y presentar el sitio. Los logos y las ilustraciones se cargan de la misma carpeta que index.html.
 
        BUSQUE ESTAS ETIQUETAS CON CTRL+F PARA COLOCAR LAS IMÁGENES:
-       LOGO UP: assets/logos/universidad-panama.png
-       LOGO 2: assets/logos/facultad-cnet.png
-       LOGO 3: assets/logos/escuela-fisica.png
-       RETRATO 1: assets/ilustraciones/comenio.png — IZQUIERDA
-       RETRATO 2: assets/ilustraciones/william-james.png — DERECHA
-       LIBRO 1: assets/ilustraciones/didactica-magna.png — IZQUIERDA
-       LIBRO 2: assets/ilustraciones/charlas-maestros.png — DERECHA
+       LOGO UP: universidad-panama.png
+       LOGO 2: facultad-cnet.png
+       LOGO 3: escuela-fisica.png
+       RETRATO 1: comenio.png — IZQUIERDA
+       RETRATO 2: william-james.png — DERECHA
+       LIBRO 1: didactica-magna.png — IZQUIERDA
+       LIBRO 2: charlas-maestros.png — DERECHA
 
        Los espacios SIEMPRE se reservan, aunque todavía no haya imágenes.
        Puede cambiar src por el nombre y la ruta de su propio archivo.
        No quite hidden de los img: el código los muestra cuando cargan.
        La primera escena tiene tres posiciones para logos; la segunda, ninguna.
        LOGO UP usa directamente su archivo actualizado, sin imagen de respaldo.
-       Todas las imágenes son PNG. Guía de las nuevas ilustraciones: IMAGENES-NUEVAS.md.
+       Todas las imágenes son PNG. Colóquelas junto a index.html, con los nombres indicados.
        Las secuencias se animan solas y se pueden seleccionar con clic o teclado.
   --><style id="interacciones-y-espacios-png">
 /* REVISIÓN VISUAL. Se conserva íntegra la animación de neblina durante el scroll. */
@@ -195,18 +195,18 @@ html.reveal-enabled .reveal{transition:opacity .14s linear,transform .14s ease-o
     <div class="intro-background" aria-hidden="true"></div>
     <div class="intro-scene intro-institution">
       <!-- PRIMERA ESCENA: LOS TRES LOGOTIPOS. La segunda escena no lleva ninguno.
-           LOGO UP: assets/logos/universidad-panama.png. Use su PNG actualizado.
+           LOGO UP: universidad-panama.png. Use su PNG actualizado.
            Archivo actualizado del usuario; no se incorpora ningún escudo de respaldo. -->
       <div class="intro-logos">
-        <div class="intro-logo-space"><img class="intro-logo" data-optional hidden src="assets/logos/universidad-panama.png" alt="Universidad de Panamá"></div>
+        <div class="intro-logo-space"><img class="intro-logo" data-optional hidden src="universidad-panama.png" alt="Universidad de Panamá"></div>
         <!-- LOGO 2: guarde el logo de la Facultad EXACTAMENTE en
-             assets/logos/facultad-cnet.png. PNG transparente, al menos 400 px de alto.
+             facultad-cnet.png. PNG transparente, al menos 400 px de alto.
              No quite hidden. El código lo muestra automáticamente al cargar. -->
-        <div class="intro-logo-space"><img class="intro-logo" data-optional src="assets/logos/facultad-cnet.png" alt="Facultad de Ciencias Naturales, Exactas y Tecnología" hidden></div>
+        <div class="intro-logo-space"><img class="intro-logo" data-optional src="facultad-cnet.png" alt="Facultad de Ciencias Naturales, Exactas y Tecnología" hidden></div>
         <!-- LOGO 3: guarde el logo de la Escuela de Física EXACTAMENTE en
-             assets/logos/escuela-fisica.png. PNG transparente, al menos 400 px de alto.
+             escuela-fisica.png. PNG transparente, al menos 400 px de alto.
              No quite hidden. Esta imagen aparece solamente en esta primera escena. -->
-        <div class="intro-logo-space"><img class="intro-logo" data-optional src="assets/logos/escuela-fisica.png" alt="Escuela de Física" hidden></div>
+        <div class="intro-logo-space"><img class="intro-logo" data-optional src="escuela-fisica.png" alt="Escuela de Física" hidden></div>
       </div>
       <p class="intro-university-name">Universidad de Panamá</p>
       <p class="intro-faculty">Facultad de Ciencias Naturales,<br>Exactas y Tecnología</p>
@@ -221,10 +221,10 @@ html.reveal-enabled .reveal{transition:opacity .14s linear,transform .14s ease-o
     </div>
   </div>
   <header class="masthead" aria-label="Identidad institucional">
-    <!-- LOGO UP: assets/logos/universidad-panama.png. El mismo PNG actualizado permanece arriba a la izquierda. -->
-    <img class="permanent-logo" data-optional hidden src="assets/logos/universidad-panama.png" alt="Universidad de Panamá">
+    <!-- LOGO UP: universidad-panama.png. El mismo PNG actualizado permanece arriba a la izquierda. -->
+    <img class="permanent-logo" data-optional hidden src="universidad-panama.png" alt="Universidad de Panamá">
     <!-- El mismo LOGO 2 aparece arriba a la derecha cuando añada el archivo. -->
-    <img class="faculty-logo" data-optional src="assets/logos/facultad-cnet.png" alt="Facultad de Ciencias Naturales, Exactas y Tecnología" hidden>
+    <img class="faculty-logo" data-optional src="facultad-cnet.png" alt="Facultad de Ciencias Naturales, Exactas y Tecnología" hidden>
   </header>
   <main id="sitio">
     <section class="hero" id="inicio" aria-labelledby="hero-title">
@@ -237,40 +237,40 @@ html.reveal-enabled .reveal{transition:opacity .14s linear,transform .14s ease-o
 
     <section class="chapter precursors" id="precursores" aria-labelledby="precursors-title"><div class="container">
       <h2 class="reveal" id="precursors-title">¿Quiénes <em>fueron?</em></h2>
-      <!-- RETRATO 1: assets/ilustraciones/comenio.png. Vertical, 900 × 1200 px.
+      <!-- RETRATO 1: comenio.png. Vertical, 900 × 1200 px.
            Se coloca a la IZQUIERDA del texto. El espacio permanece reservado aunque todavía no añada la imagen.
            Si usa .webp, cambie también src; cambiar la extensión no convierte formatos.
            Escriba una atribución real dentro de figcaption si la imagen lo requiere. -->
       <article class="author-row has-media reveal" id="comenio">
-        <figure class="optional-media portrait"><img hidden data-optional src="assets/ilustraciones/comenio.png" alt="Retrato de Comenio"><figcaption></figcaption></figure>
+        <figure class="optional-media portrait"><img hidden data-optional src="comenio.png" alt="Retrato de Comenio"><figcaption></figcaption></figure>
         <div class="author-text"><h3>Comenio</h3><p>Jan Amos Komenský (1592–1670) fue un maestro y reformador educativo de Moravia. Buscó ampliar el acceso a la escuela y mejorar sus métodos. Su preocupación era que aprender significara comprender las cosas, en lugar de repetir palabras sin sentido. Por eso propuso organizar los contenidos de forma gradual y apoyarlos en la observación. <a class="cite" href="https://archive.org/details/greatdidacticofj00come" target="_blank" rel="noopener noreferrer">(Comenius, 1657/1896)</a></p></div>
       </article>
-      <!-- RETRATO 2: assets/ilustraciones/william-james.png. Vertical, 900 × 1200 px.
+      <!-- RETRATO 2: william-james.png. Vertical, 900 × 1200 px.
            Se coloca a la DERECHA del texto. No confundir con Henry James.
            El espacio permanece reservado aunque todavía no añada la imagen. Atribución real en figcaption. -->
       <article class="author-row has-media reverse reveal" id="james">
-        <figure class="optional-media portrait"><img hidden data-optional src="assets/ilustraciones/william-james.png" alt="Retrato de William James"><figcaption></figcaption></figure>
+        <figure class="optional-media portrait"><img hidden data-optional src="william-james.png" alt="Retrato de William James"><figcaption></figcaption></figure>
         <div class="author-text"><h3>William James</h3><p>William James (1842–1910) fue un psicólogo y filósofo estadounidense, profesor en Harvard. Estudió la atención, el interés y los hábitos. También acercó la psicología al trabajo del maestro: le interesaba comprender cómo participa el alumno en el aprendizaje y cómo la enseñanza puede orientar esa actividad. <a class="cite" href="https://archive.org/download/talkstoteacherso00jameiala/talkstoteacherso00jameiala.pdf" target="_blank" rel="noopener noreferrer">(James, 1899)</a></p></div>
       </article>
     </div></section>
 
     <section class="chapter contributions" id="aportes" aria-labelledby="contributions-title"><div class="container">
       <h2 class="reveal" id="contributions-title">¿Cuál fue su <em>principal aporte?</em></h2>
-      <!-- LIBRO 1: assets/ilustraciones/didactica-magna.png. Cubierta o portada
+      <!-- LIBRO 1: didactica-magna.png. Cubierta o portada
            interior legible del libro Didáctica magna. Vertical, mínimo 700 × 1000 px.
            Se coloca a la IZQUIERDA. No use un retrato como portada de libro.
            El espacio permanece reservado aunque el archivo todavía no exista. -->
       <article class="author-row has-media reveal">
-        <figure class="optional-media book"><img hidden data-optional src="assets/ilustraciones/didactica-magna.png" alt="Portada del libro Didáctica magna de Comenio"><figcaption></figcaption></figure>
+        <figure class="optional-media book"><img hidden data-optional src="didactica-magna.png" alt="Portada del libro Didáctica magna de Comenio"><figcaption></figcaption></figure>
         <div class="author-text"><h3>Comenio</h3><p>En su libro <em>Didáctica magna</em> (1657) sistematizó una enseñanza ordenada y gradual. Propuso que el profesor avance desde lo conocido hacia lo nuevo y desde la experiencia concreta hacia la explicación. Su aporte sitúa el método de enseñanza al servicio de la comprensión del estudiante. <a class="cite" href="https://archive.org/details/greatdidacticofj00come" target="_blank" rel="noopener noreferrer">(Comenius, 1657/1896)</a></p></div>
       </article>
-      <!-- LIBRO 2: assets/ilustraciones/charlas-maestros.png. Cubierta o portada
+      <!-- LIBRO 2: charlas-maestros.png. Cubierta o portada
            interior de Charlas a los maestros / Talks to teachers on psychology.
            Vertical, mínimo 700 × 1000 px. Se coloca a la DERECHA.
            Si usa el original inglés, conserve su título real en la imagen.
            El espacio permanece reservado. Crédito real en figcaption. -->
       <article class="author-row has-media reverse reveal">
-        <figure class="optional-media book"><img hidden data-optional src="assets/ilustraciones/charlas-maestros.png" alt="Portada del libro Charlas a los maestros de William James"><figcaption></figcaption></figure>
+        <figure class="optional-media book"><img hidden data-optional src="charlas-maestros.png" alt="Portada del libro Charlas a los maestros de William James"><figcaption></figcaption></figure>
         <div class="author-text"><h3>William James</h3><p>En su libro <em>Charlas a los maestros sobre psicología</em> (1899) relacionó conocimientos psicológicos con situaciones del aula. Explicó por qué el interés, la atención y la práctica importan al aprender. Así, el docente puede atender tanto a lo que enseña como a lo que el alumno hace para comprenderlo. <a class="cite" href="https://archive.org/download/talkstoteacherso00jameiala/talkstoteacherso00jameiala.pdf" target="_blank" rel="noopener noreferrer">(James, 1899)</a></p></div>
       </article>
     </div></section>
@@ -282,12 +282,12 @@ html.reveal-enabled .reveal{transition:opacity .14s linear,transform .14s ease-o
            o tocar el óvalo. Otro toque en el mismo óvalo la cierra; Escape también.
            No cubre los nombres. Los tres pasos conservan su explicación textual. -->
       <div class="paired-ideas">
-        <article class="principle blue reveal"><h3>Comenio</h3><p>La explicación debe partir de una experiencia comprensible. Primero se conoce el fenómeno; después se le da nombre y se comprende su explicación. <a class="cite" href="https://archive.org/details/greatdidacticofj00come" target="_blank" rel="noopener noreferrer">(Comenius, 1657/1896)</a></p><div class="animated-flow"><ol class="concept-flow" aria-label="Secuencia de enseñanza de Comenio"><li class="step-1"><button type="button" class="flow-step" aria-pressed="true" data-note="Comparar el movimiento de los dos péndulos." data-image="assets/ilustraciones/comenio-observar.png" data-image-alt="Dos péndulos de distinta longitud observados por un estudiante.">Observar el fenómeno</button></li><li class="step-2"><svg class="flow-arrow" viewBox="0 0 24 42" aria-hidden="true"><path d="M12 2v33M5 28l7 7 7-7"/></svg><button type="button" class="flow-step" aria-pressed="false" data-note="Describir cuál tarda más en completar una oscilación." data-image="assets/ilustraciones/comenio-describir.png" data-image-alt="Comparación de los tiempos de oscilación de los dos péndulos.">Describir lo observado</button></li><li class="step-3"><svg class="flow-arrow" viewBox="0 0 24 42" aria-hidden="true"><path d="M12 2v33M5 28l7 7 7-7"/></svg><button type="button" class="flow-step" aria-pressed="false" data-note="Relacionar la longitud del hilo con el período." data-image="assets/ilustraciones/comenio-comprender.png" data-image-alt="Relación entre la longitud del péndulo y su período.">Comprender la explicación</button></li></ol><p class="flow-explanation">Comparar el movimiento de los dos péndulos.</p>
+        <article class="principle blue reveal"><h3>Comenio</h3><p>La explicación debe partir de una experiencia comprensible. Primero se conoce el fenómeno; después se le da nombre y se comprende su explicación. <a class="cite" href="https://archive.org/details/greatdidacticofj00come" target="_blank" rel="noopener noreferrer">(Comenius, 1657/1896)</a></p><div class="animated-flow"><ol class="concept-flow" aria-label="Secuencia de enseñanza de Comenio"><li class="step-1"><button type="button" class="flow-step" aria-pressed="true" data-note="Comparar el movimiento de los dos péndulos." data-image="comenio-observar.png" data-image-alt="Dos péndulos de distinta longitud observados por un estudiante.">Observar el fenómeno</button></li><li class="step-2"><svg class="flow-arrow" viewBox="0 0 24 42" aria-hidden="true"><path d="M12 2v33M5 28l7 7 7-7"/></svg><button type="button" class="flow-step" aria-pressed="false" data-note="Describir cuál tarda más en completar una oscilación." data-image="comenio-describir.png" data-image-alt="Comparación de los tiempos de oscilación de los dos péndulos.">Describir lo observado</button></li><li class="step-3"><svg class="flow-arrow" viewBox="0 0 24 42" aria-hidden="true"><path d="M12 2v33M5 28l7 7 7-7"/></svg><button type="button" class="flow-step" aria-pressed="false" data-note="Relacionar la longitud del hilo con el período." data-image="comenio-comprender.png" data-image-alt="Relación entre la longitud del péndulo y su período.">Comprender la explicación</button></li></ol><p class="flow-explanation">Comparar el movimiento de los dos péndulos.</p>
         <!-- PNG de cada paso: vea data-image en los tres botones de arriba. -->
-        <figure class="interaction-media flow-media" hidden><img data-optional hidden src="assets/ilustraciones/comenio-observar.png" alt="Dos péndulos de distinta longitud observados por un estudiante."></figure></div></article>
-        <article class="principle lavender reveal"><h3>William James</h3><p>Educar implica formar hábitos útiles de atención y acción. El interés acerca al alumno a la tarea y la práctica consolida su manera de trabajar. <a class="cite" href="https://archive.org/download/talkstoteacherso00jameiala/talkstoteacherso00jameiala.pdf" target="_blank" rel="noopener noreferrer">(James, 1899)</a></p><div class="animated-flow"><ol class="concept-flow" aria-label="Relación entre interés, atención y práctica en James"><li class="step-1"><button type="button" class="flow-step" aria-pressed="true" data-note="Partir de una experiencia cercana, como un columpio." data-image="assets/ilustraciones/james-interes.png" data-image-alt="Una pregunta sobre un columpio despierta el interés del estudiante.">Despertar el interés</button></li><li class="step-2"><svg class="flow-arrow" viewBox="0 0 24 42" aria-hidden="true"><path d="M12 2v33M5 28l7 7 7-7"/></svg><button type="button" class="flow-step" aria-pressed="false" data-note="Centrarse en la longitud y el tiempo de oscilación." data-image="assets/ilustraciones/james-atencion.png" data-image-alt="El estudiante centra su atención en la longitud y el tiempo de oscilación.">Orientar la atención</button></li><li class="step-3"><svg class="flow-arrow" viewBox="0 0 24 42" aria-hidden="true"><path d="M12 2v33M5 28l7 7 7-7"/></svg><button type="button" class="flow-step" aria-pressed="false" data-note="Explicar las respuestas y comprobar si tienen sentido." data-image="assets/ilustraciones/james-habitos.png" data-image-alt="El estudiante explica una respuesta y revisa su razonamiento.">Practicar hábitos útiles</button></li></ol><p class="flow-explanation">Partir de una experiencia cercana, como un columpio.</p>
+        <figure class="interaction-media flow-media" hidden><img data-optional hidden src="comenio-observar.png" alt="Dos péndulos de distinta longitud observados por un estudiante."></figure></div></article>
+        <article class="principle lavender reveal"><h3>William James</h3><p>Educar implica formar hábitos útiles de atención y acción. El interés acerca al alumno a la tarea y la práctica consolida su manera de trabajar. <a class="cite" href="https://archive.org/download/talkstoteacherso00jameiala/talkstoteacherso00jameiala.pdf" target="_blank" rel="noopener noreferrer">(James, 1899)</a></p><div class="animated-flow"><ol class="concept-flow" aria-label="Relación entre interés, atención y práctica en James"><li class="step-1"><button type="button" class="flow-step" aria-pressed="true" data-note="Partir de una experiencia cercana, como un columpio." data-image="james-interes.png" data-image-alt="Una pregunta sobre un columpio despierta el interés del estudiante.">Despertar el interés</button></li><li class="step-2"><svg class="flow-arrow" viewBox="0 0 24 42" aria-hidden="true"><path d="M12 2v33M5 28l7 7 7-7"/></svg><button type="button" class="flow-step" aria-pressed="false" data-note="Centrarse en la longitud y el tiempo de oscilación." data-image="james-atencion.png" data-image-alt="El estudiante centra su atención en la longitud y el tiempo de oscilación.">Orientar la atención</button></li><li class="step-3"><svg class="flow-arrow" viewBox="0 0 24 42" aria-hidden="true"><path d="M12 2v33M5 28l7 7 7-7"/></svg><button type="button" class="flow-step" aria-pressed="false" data-note="Explicar las respuestas y comprobar si tienen sentido." data-image="james-habitos.png" data-image-alt="El estudiante explica una respuesta y revisa su razonamiento.">Practicar hábitos útiles</button></li></ol><p class="flow-explanation">Partir de una experiencia cercana, como un columpio.</p>
         <!-- PNG de cada paso: vea data-image en los tres botones de arriba. -->
-        <figure class="interaction-media flow-media" hidden><img data-optional hidden src="assets/ilustraciones/james-interes.png" alt="Una pregunta sobre un columpio despierta el interés del estudiante."></figure></div></article>
+        <figure class="interaction-media flow-media" hidden><img data-optional hidden src="james-interes.png" alt="Una pregunta sobre un columpio despierta el interés del estudiante."></figure></div></article>
       </div>
     </div></section>
 
@@ -295,16 +295,16 @@ html.reveal-enabled .reveal{transition:opacity .14s linear,transform .14s ease-o
       <h2 class="reveal" id="connections-title">Su relación con la <em>psicopedagogía</em></h2>
       <div class="paired-text">
         <article class="reveal"><h3>Comenio</h3><p>La enseñanza debe acompañar la comprensión: partir de la observación y avanzar hacia la explicación. Su propuesta anticipa una preocupación de la psicopedagogía: adaptar el modo de enseñar al proceso de aprender. <a class="cite" href="https://archive.org/details/greatdidacticofj00come" target="_blank" rel="noopener noreferrer">(Comenius, 1657/1896)</a></p>
-          <!-- PNG PSICOPEDAGOGÍA COMENIO: assets/ilustraciones/comenio-psicopedagogia.png.
+          <!-- PNG PSICOPEDAGOGÍA COMENIO: comenio-psicopedagogia.png.
                Ilustración de observar, comprender y organizar la enseñanza gradualmente.
                Horizontal, 1400 × 1000 px o más. Espacio reservado debajo del texto. -->
-          <figure class="illustration-space psychology-image"><img data-optional hidden src="assets/ilustraciones/comenio-psicopedagogia.png" alt="Ilustración de cómo la observación y la enseñanza gradual apoyan la comprensión."><figcaption></figcaption></figure>
+          <figure class="illustration-space psychology-image"><img data-optional hidden src="comenio-psicopedagogia.png" alt="Ilustración de cómo la observación y la enseñanza gradual apoyan la comprensión."><figcaption></figcaption></figure>
         </article>
         <article class="reveal"><h3>William James</h3><p>Relaciona la atención, el interés y los hábitos con las decisiones del docente. La psicología ayuda a comprender al estudiante y a orientar una práctica que favorezca su aprendizaje. <a class="cite" href="https://archive.org/download/talkstoteacherso00jameiala/talkstoteacherso00jameiala.pdf" target="_blank" rel="noopener noreferrer">(James, 1899)</a></p>
-          <!-- PNG PSICOPEDAGOGÍA JAMES: assets/ilustraciones/james-psicopedagogia.png.
+          <!-- PNG PSICOPEDAGOGÍA JAMES: james-psicopedagogia.png.
                Ilustración que conecta interés, atención y práctica de hábitos útiles.
                Horizontal, 1400 × 1000 px o más. Espacio reservado debajo del texto. -->
-          <figure class="illustration-space psychology-image"><img data-optional hidden src="assets/ilustraciones/james-psicopedagogia.png" alt="Ilustración de la relación entre interés, atención y hábitos en el aprendizaje."><figcaption></figcaption></figure>
+          <figure class="illustration-space psychology-image"><img data-optional hidden src="james-psicopedagogia.png" alt="Ilustración de la relación entre interés, atención y hábitos en el aprendizaje."><figcaption></figcaption></figure>
         </article>
       </div>
     </div></section>
@@ -333,10 +333,10 @@ html.reveal-enabled .reveal{transition:opacity .14s linear,transform .14s ease-o
         <div class="math-display" data-latex="T=2\pi\sqrt{\frac{L}{g}}"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>L</mi><mi>g</mi></mfrac></msqrt></math></div>
 
         <p><var>T</var> es el período, <var>L</var> la longitud del hilo y <var>g</var> la aceleración de la gravedad. Al aumentar la longitud, aumenta el período. <a class="cite" href="https://charma.uprm.edu/~mendez/Lectures/OpenStax_v1/v1_ed0_openstax_15.pdf" target="_blank" rel="noopener noreferrer">(Moebs et al., 2016)</a></p><div class="physics-conclusion"><p>La secuencia concreta el principio de Comenio: la observación prepara la descripción y esta permite comprender la relación matemática. <a class="cite" href="https://archive.org/details/greatdidacticofj00come" target="_blank" rel="noopener noreferrer">(Comenius, 1657/1896)</a></p>
-          <!-- PNG APLICACIÓN COMENIO: assets/ilustraciones/comenio-secuencia-fisica.png.
+          <!-- PNG APLICACIÓN COMENIO: comenio-secuencia-fisica.png.
                A la DERECHA del párrafo. Tres viñetas: observar, describir y formular.
                Horizontal, 1400 × 1000 px o más. El espacio no desaparece si falta. -->
-          <figure class="illustration-space physics-image"><img data-optional hidden src="assets/ilustraciones/comenio-secuencia-fisica.png" alt="Secuencia de observar el péndulo, describir su movimiento y comprender el modelo matemático."><figcaption></figcaption></figure>
+          <figure class="illustration-space physics-image"><img data-optional hidden src="comenio-secuencia-fisica.png" alt="Secuencia de observar el péndulo, describir su movimiento y comprender el modelo matemático."><figcaption></figcaption></figure>
         </div>
       </div>
     </div></section>
@@ -350,13 +350,13 @@ html.reveal-enabled .reveal{transition:opacity .14s linear,transform .14s ease-o
            frase para detenerse en ella. Cada paso tiene su PNG propio, indicado en data-image. -->
       <div class="animated-flow reasoning-flow reveal" data-flow-mode="persistent">
         <ol class="concept-flow" aria-label="Rutina de razonamiento en la clase de Física">
-          <li class="step-1"><button type="button" class="flow-step" aria-pressed="true" data-note="Anticipar cuál péndulo tardará más en completar una oscilación." data-image="assets/ilustraciones/james-predecir.png" data-image-alt="Predicción sobre el período de dos péndulos de diferente longitud.">Predecir</button></li>
-          <li class="step-2"><svg class="flow-arrow" viewBox="0 0 24 42" aria-hidden="true"><path d="M12 2v33M5 28l7 7 7-7"/></svg><button type="button" class="flow-step" aria-pressed="false" data-note="Explicar la predicción a partir de la longitud del hilo." data-image="assets/ilustraciones/james-justificar.png" data-image-alt="Justificación de una predicción a partir de la longitud del hilo.">Justificar</button></li>
-          <li class="step-3"><svg class="flow-arrow" viewBox="0 0 24 42" aria-hidden="true"><path d="M12 2v33M5 28l7 7 7-7"/></svg><button type="button" class="flow-step" aria-pressed="false" data-note="Comparar la predicción con las mediciones y corregir la explicación." data-image="assets/ilustraciones/james-revisar.png" data-image-alt="Comparación entre la predicción y los tiempos medidos.">Revisar</button></li>
+          <li class="step-1"><button type="button" class="flow-step" aria-pressed="true" data-note="Anticipar cuál péndulo tardará más en completar una oscilación." data-image="james-predecir.png" data-image-alt="Predicción sobre el período de dos péndulos de diferente longitud.">Predecir</button></li>
+          <li class="step-2"><svg class="flow-arrow" viewBox="0 0 24 42" aria-hidden="true"><path d="M12 2v33M5 28l7 7 7-7"/></svg><button type="button" class="flow-step" aria-pressed="false" data-note="Explicar la predicción a partir de la longitud del hilo." data-image="james-justificar.png" data-image-alt="Justificación de una predicción a partir de la longitud del hilo.">Justificar</button></li>
+          <li class="step-3"><svg class="flow-arrow" viewBox="0 0 24 42" aria-hidden="true"><path d="M12 2v33M5 28l7 7 7-7"/></svg><button type="button" class="flow-step" aria-pressed="false" data-note="Comparar la predicción con las mediciones y corregir la explicación." data-image="james-revisar.png" data-image-alt="Comparación entre la predicción y los tiempos medidos.">Revisar</button></li>
         </ol>
         <p class="flow-explanation">Anticipar cuál péndulo tardará más en completar una oscilación.</p>
         <!-- PNG de cada paso: vea data-image en los tres botones de arriba. -->
-        <figure class="interaction-media flow-media"><img data-optional hidden src="assets/ilustraciones/james-predecir.png" alt="Predicción sobre el período de dos péndulos de diferente longitud."></figure>
+        <figure class="interaction-media flow-media"><img data-optional hidden src="james-predecir.png" alt="Predicción sobre el período de dos péndulos de diferente longitud."></figure>
       </div>
     </div></section>
 
@@ -372,36 +372,36 @@ html.reveal-enabled .reveal{transition:opacity .14s linear,transform .14s ease-o
       <h2 class="reveal" id="debate-title">Debate</h2>
       <p class="debate-question reveal">¿Qué elementos de las ideas de los precursores estudiados pueden observarse todavía en la práctica educativa actual?</p>
       <div class="debate-grid">
-        <!-- TARJETA 1: reverso = assets/ilustraciones/debate-observacion.png. PNG horizontal.
+        <!-- TARJETA 1: reverso = debate-observacion.png. PNG horizontal.
              Ilustre el elemento «Observar antes de explicar». No escriba párrafos dentro de la imagen. -->
         <button class="debate-card reveal" type="button" aria-pressed="false" aria-label="Ver imagen: Observar antes de explicar">
           <span class="card-inner">
             <span class="card-front"><strong class="card-title">Observar antes de explicar</strong><span class="card-description">Las demostraciones y los experimentos permiten conocer un fenómeno antes de representarlo con conceptos y fórmulas.</span><span class="card-author">Comenio</span></span>
-            <span class="card-back" aria-hidden="true"><span class="flip-media"><img data-optional hidden src="assets/ilustraciones/debate-observacion.png" alt="Una clase observa un experimento de Física antes de escribir su explicación."></span></span>
+            <span class="card-back" aria-hidden="true"><span class="flip-media"><img data-optional hidden src="debate-observacion.png" alt="Una clase observa un experimento de Física antes de escribir su explicación."></span></span>
           </span>
         </button>
-        <!-- TARJETA 2: reverso = assets/ilustraciones/debate-ensenanza-gradual.png. PNG horizontal.
+        <!-- TARJETA 2: reverso = debate-ensenanza-gradual.png. PNG horizontal.
              Ilustre el elemento «Enseñanza gradual». No escriba párrafos dentro de la imagen. -->
         <button class="debate-card reveal" type="button" aria-pressed="false" aria-label="Ver imagen: Enseñanza gradual">
           <span class="card-inner">
             <span class="card-front"><strong class="card-title">Enseñanza gradual</strong><span class="card-description">Los contenidos avanzan de lo conocido a lo nuevo, con actividades que preparan la comprensión del siguiente concepto.</span><span class="card-author">Comenio</span></span>
-            <span class="card-back" aria-hidden="true"><span class="flip-media"><img data-optional hidden src="assets/ilustraciones/debate-ensenanza-gradual.png" alt="Una secuencia de aprendizaje avanza desde una experiencia conocida hacia un concepto nuevo."></span></span>
+            <span class="card-back" aria-hidden="true"><span class="flip-media"><img data-optional hidden src="debate-ensenanza-gradual.png" alt="Una secuencia de aprendizaje avanza desde una experiencia conocida hacia un concepto nuevo."></span></span>
           </span>
         </button>
-        <!-- TARJETA 3: reverso = assets/ilustraciones/debate-interes.png. PNG horizontal.
+        <!-- TARJETA 3: reverso = debate-interes.png. PNG horizontal.
              Ilustre el elemento «Despertar el interés». No escriba párrafos dentro de la imagen. -->
         <button class="debate-card reveal" type="button" aria-pressed="false" aria-label="Ver imagen: Despertar el interés">
           <span class="card-inner">
             <span class="card-front"><strong class="card-title">Despertar el interés</strong><span class="card-description">Las preguntas sobre experiencias cotidianas ayudan a orientar la atención hacia el problema que se va a estudiar.</span><span class="card-author">William James</span></span>
-            <span class="card-back" aria-hidden="true"><span class="flip-media"><img data-optional hidden src="assets/ilustraciones/debate-interes.png" alt="Una pregunta sobre una situación cotidiana despierta curiosidad en el aula."></span></span>
+            <span class="card-back" aria-hidden="true"><span class="flip-media"><img data-optional hidden src="debate-interes.png" alt="Una pregunta sobre una situación cotidiana despierta curiosidad en el aula."></span></span>
           </span>
         </button>
-        <!-- TARJETA 4: reverso = assets/ilustraciones/debate-habitos.png. PNG horizontal.
+        <!-- TARJETA 4: reverso = debate-habitos.png. PNG horizontal.
              Ilustre el elemento «Formar hábitos de razonamiento». No escriba párrafos dentro de la imagen. -->
         <button class="debate-card reveal" type="button" aria-pressed="false" aria-label="Ver imagen: Formar hábitos de razonamiento">
           <span class="card-inner">
             <span class="card-front"><strong class="card-title">Formar hábitos de razonamiento</strong><span class="card-description">Predecir, justificar y revisar resultados se practican de forma habitual para aprender a trabajar con sentido.</span><span class="card-author">William James</span></span>
-            <span class="card-back" aria-hidden="true"><span class="flip-media"><img data-optional hidden src="assets/ilustraciones/debate-habitos.png" alt="Estudiantes practican predecir, justificar y revisar una explicación de Física."></span></span>
+            <span class="card-back" aria-hidden="true"><span class="flip-media"><img data-optional hidden src="debate-habitos.png" alt="Estudiantes practican predecir, justificar y revisar una explicación de Física."></span></span>
           </span>
         </button>
       </div>
